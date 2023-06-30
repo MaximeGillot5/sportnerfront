@@ -1,0 +1,63 @@
+/* SPORTS PAGE */
+
+.sportsMessage{
+  display: block;
+  text-align: center;
+  background-color: white;
+  width: 95%;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.sportsMessage button{
+  margin: auto;
+  padding: 20px;
+  background-color: orangered;
+  border-radius: 20px;
+  color: white;
+  margin: 20px;
+}
+
+.cardsContainer{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+.sportCard{
+  padding: 20px;
+  background-color: white;
+  color: #29335c;
+  border: 2px solid black;
+  border-radius: 20px;
+  width: 30%;
+  margin: 3px;
+}
+.sportCard:hover{
+  background-color: #29335c;
+  color: white;
+}
+.sportCard h3{
+  text-align: start;
+  font-size: 5vh;  
+  margin-bottom: 10px;
+}
+.sportCard img{
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .sportCard {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .sportCard {
+    width: 100%;
+  }
+ 
+}

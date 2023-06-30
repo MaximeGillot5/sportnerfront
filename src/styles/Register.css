@@ -1,0 +1,31 @@
+#register-form input {
+  width: 80%;
+  min-width: 60%;
+  border-radius: 40px;
+  font-size: smaller;
+}
+
+#register-form input::placeholder {
+  text-align: center;
+}
+
+#register-title{
+  font-size: x-large;
+}
+#firstname-input {
+  padding-top: 30px;
+}
+
+#register-btn {
+  background-color: #29335c;
+  color: white;
+  padding: 20px;
+  border-radius: 30px;
+}
+@media screen and (max-width: 650px) {
+  #register-form input::placeholder {
+      font-size: 8px;
+      text-align: center;
+  }
+}
+

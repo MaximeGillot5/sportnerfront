@@ -1,0 +1,182 @@
+/* SEARCH BAR */
+#searchBar{
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
+}
+#searchBar input{
+  border-radius: 20px;
+  text-align: center;
+  width: 50%;
+  padding: 20px;
+}
+#searchBar input:focus{
+  outline: none !important;
+  box-shadow: none !important;
+  border: 2px solid orangered;
+}
+#searchBar input::placeholder{
+  font-size: 15px;
+}
+
+/* EVENTS RESULTS */
+
+.buttonToCreate{
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 20px;
+}
+.buttonToCreate button{
+  background-color: orangered;
+  padding: 20px;
+  border-radius: 20px;
+  color: white;
+  margin-top: 20px;
+}
+
+/* EVENTS FORM */
+
+#Cadre form *{
+  display: block;
+  text-align: center;
+}
+#Cadre{
+  min-height: 100%;
+}
+
+#Cadre input{
+  width: 80%;
+  margin: auto;
+  border-radius: 20px;
+  border: none;
+  font-size: 15px;
+}
+#Cadre input:focus{
+  outline: none !important;
+  box-shadow: none !important;
+  border: 2px solid orangered;
+}
+#Cadre input::placeholder{
+  font-size: 15px;
+}
+
+#Cadre button{
+  margin: auto;
+  padding: 20px;
+  background-color: #29335c;
+  border-radius: 20px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+#Cadre .CreateEventTitle{
+  margin: 40px 0;
+  text-align: center;
+  font-size: xx-large;
+}
+
+#sport_id{
+  display: flex;
+  text-align: center;
+  margin: auto;
+  width: 80%;
+  border-radius: 20px;
+  border: none;
+  font-size: 15px;
+}
+
+/* EVENTS LIST */
+#cardsContainer{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+#eventCard{
+  padding: 20px;
+  background-color: white;
+  color: #29335c;
+  border: 2px solid black;
+  border-radius: 20px;
+  width: 30%;
+  margin: 3px;
+  min-height: 360px;
+}
+#eventCard:hover{
+  background-color: #29335c;
+  color: white;
+  cursor: pointer;
+}
+#infosCard h3, #eventCard h3{
+  text-align: start;
+  font-size: 5vh;  
+  margin-bottom: 10px;
+}
+#eventCard h1{
+  text-align: start;
+  font-size: 3vh;  
+  margin-bottom: 10px;
+}
+.bodyCard{
+  display: flex;
+  flex-direction: row;
+}
+.sportText{
+  margin: auto;
+  text-align: center;
+  width: 50%;
+}
+.sportPic{
+  width: 50%;
+  text-align: center;
+}
+.sportPic img{
+  border-radius: 300px;
+  padding: 10px;
+}
+#buttonContainer{
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+#buttonParticipation, #deleteButton{
+  background-color: orangered;
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+  justify-content: center;
+}
+#buttonParticipation:hover, #deleteButton:hover{
+  background-color: rgb(201, 54, 0);
+}
+#infosCard .date, #eventCard .date{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+  bottom: 5px;
+}
+#participantsList{
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  #eventCard {
+    width: 45%;
+  }
+  #searchBar input::placeholder{
+    font-size: 12px;
+  }
+  #searchBar input{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #eventCard {
+    width: 100%;
+  }
+ 
+}

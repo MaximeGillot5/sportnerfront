@@ -1,0 +1,103 @@
+form * {
+  margin-bottom: 20px;
+}
+
+form,
+.form-container {
+  text-align: center;
+  color: #29335c;
+  object-fit: cover;
+  align-items: center;
+  text-align: center;
+  padding-top: 2%;
+}
+.form-message {
+  margin-bottom: 15px;
+}
+#form #contact-text {
+  padding-bottom: 5%;
+}
+
+#form .button {
+  background-color: #29335c;
+  color: rgb(255, 255, 255);
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  border-radius: 30px;
+  margin-top: 20px;
+}
+#form .success,
+#form .error {
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+#form .success {
+  background: green;
+}
+.error {
+  background: red;
+}
+#form #name,
+#form #email {
+  height: 35px;
+  border: none;
+  border-radius: 15px;
+  color: #29335c;
+  font-size: 20px;
+  justify-content: center;
+  width: 100%;
+}
+#form #name:focus,
+#form #message:focus,
+#form #email:focus,
+select:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 2px solid orangered;
+}
+
+#form #message {
+  height: 100px;
+  resize: none;
+  font-size: 18px;
+  margin: auto;
+  width: 100%;
+  border-radius: 15px;
+  border: none;
+}
+
+#form .button:hover {
+  cursor: pointer;
+}
+
+#form input {
+  height: 35px;
+  border: none;
+  border-radius: 25px;
+  color: #29335c;
+  font-size: 20px;
+  justify-content: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  #form #name,
+  #form #email,
+  #form #message {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #form input {
+    margin: auto;
+  }
+}

@@ -1,0 +1,82 @@
+#text-orange {
+  color: orangered;
+}
+
+#LoginFormWrap {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 100%;
+  padding-top: 10px;
+  
+}
+
+#LoginFormWrap .title {
+  padding: 20px;
+  text-align: center;
+  border-radius: 40px;
+  padding-left: 5%;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: #29335c;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#LoginFormWrap .signin-form {
+  color: rgb(255, 255, 255);
+  background-color: #29335c;
+  text-align: center;
+  align-items: center;
+}
+#LoginFormWrap .signin-form p {
+  margin: 30px;
+}
+
+#LoginFormWrap .signin-form,
+#LoginFormWrap .signup-form,
+#LoginFormWrap .title {
+  border: 2px solid black;
+  border-radius: 40px;
+  margin: 40px;
+}
+
+#LoginFormWrap .signin-form {
+  grid-area: 2 / 1 / 6 / 3;
+}
+#LoginFormWrap .signup-form {
+  grid-area: 2 / 4 / 6 / 6;
+  margin-right: 40px;
+}
+#LoginFormWrap .title {
+  grid-area: 1 / 1 / 2 / 6;
+}
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 1200px) {
+  .signin-form {
+    font-size: 1vw;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #LoginFormWrap {
+    display: block;
+    width: 80%;
+    margin: auto;    
+  }
+}
+@media screen and (max-width: 600px) {
+  #LoginFormWrap {
+    display: block;
+    width: 100%;
+    margin: auto;    
+  }
+}
+
